@@ -5,8 +5,65 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_hijaupastel">
 
+    <ImageView
+        android:id="@+id/boxputih"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/boxputih"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
+    <TextView
+        android:id="@+id/jelajahi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Jelajahi Menu Kami dan Temukan Favorit Baru Anda"
+        android:textAlignment="center"
+        android:textSize="29sp"
+        app:layout_constraintTop_toTopOf="@id/boxputih"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/taste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Taste that Welcome like Morning Sun"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/jelajahi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/rasayang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Rasa yang Menyambut Seperti Mentari Pagi"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/taste"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+    android:id="@+id/getStartedButton"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Get Started"
+    android:textColor="@android:color/white"
+    android:backgroundTint="#5E7C59"
+    android:fontFamily="@font/poppins_bold"
+    android:textSize="20sp"
+    app:layout_constraintTop_toBottomOf="@id/rasayang"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="10dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

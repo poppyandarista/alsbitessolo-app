@@ -8,10 +8,109 @@
     tools:context=".MainActivity"
     android:background="@drawable/bg_hijaupastel">
 
-    <ImageView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img1shadow"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/boxputih"
+        android:layout_marginBottom="110dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logoalsbitessolo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="8dp"
+        android:layout_marginStart="35dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="300dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_goneMarginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jumatberkah" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Gambar lingkaran di kiri -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drink" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/EndCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/testimoni" />
+    </androidx.cardview.widget.CardView>
+
+<ImageView
         android:id="@+id/boxputih"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:src="@drawable/boxputih"
         app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -20,9 +119,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="Jelajahi Menu Kami dan Temukan Favorit Baru Anda"
+        android:text="Jelajahi Menu Kami \ndan Temukan Favorit Baru Anda"
         android:textAlignment="center"
-        android:textSize="29sp"
+        android:textSize="25sp"
         app:layout_constraintTop_toTopOf="@id/boxputih"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +133,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:text="Taste that Welcome like Morning Sun"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/jelajahi"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +145,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:text="Rasa yang Menyambut Seperti Mentari Pagi"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/taste"
         app:layout_constraintStart_toStartOf="parent"

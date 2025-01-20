@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204684048351",
+    "project_id": "alsbitessolo",
+    "storage_bucket": "alsbitessolo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204684048351:android:3743fec2bb312cd9f7366a",
+        "android_client_info": {
+          "package_name": "com.luthfiana.alsbitessolo_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFfSZ1PWzr80Mr__ff_Hg2qc2HISNJVCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
